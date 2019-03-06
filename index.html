@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Division VANILLA</title>
+    </head>
+    <body>
+        <h1 id="header">JavaScrits Vanilla</h1>
+        <label for="">Numero 1:</label>
+        <input type="text" id="numero1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="numero2">
+        <br><br>
+       <input type="button" id="Div_button" value="Dividir">
+        <h4 id="footer"></h4>
+    </body>
+    <script>
+        document.getElementById("Div_button").onclick = function() {
+            var num1 = document.getElementById('numero1').value;
+            var num2 = document.getElementById('numero2').value;
+            var div = parseInt(num1) / parseInt(num2);
+            document.getElementById("footer").innerHTML = "EL RESULTADO ES: " + div;    
+      }
+    </script>
+</html
